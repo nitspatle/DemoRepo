@@ -1,0 +1,15 @@
+from selenium import webdriver
+driver=webdriver.Chrome(executable_path="C:\\Users\\nites\\Desktop\\crome_driver\\chromedriver.exe")
+driver.get("https://www.youtube.com/")
+print(driver.title)
+import time
+time.sleep(5)
+driver.get("http://demo.automationtesting.in/Register.html")
+print(driver.title)
+driver.back()
+time.sleep(5)
+print(driver.title)
+driver.forward()
+print(driver.title)
+time.sleep(5)
+driver.close()
